@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="logo.png" alt="Profile Picture">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm <span>SHACHINSURIYA</span></h1>
+            <h1>A <span>Software Developer</span></h1>
+            <p>As a mechanical engineering student passionate about software development, I excel in robotics and automation, blending mechanical knowledge with coding skills.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/shachin-suriya-m-0832a0257/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/shachin2615"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/shachin2615/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skill-list">
+            <!-- Skill 1: C -->
+            <div class="skill">
+                <h3>C</h3>
+                <p>Proficient in low-level system programming and embedded systems. Experienced in writing efficient algorithms and handling hardware interactions.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <!-- Skill 2: C++ -->
+            <div class="skill">
+                <h3>C++</h3>
+                <p>Strong grasp of object-oriented programming and memory management. Skilled in designing complex systems using the C++ Standard Library.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <!-- Skill 3: Python -->
+            <div class="skill">
+                <h3>PYTHON</h3>
+                <p>Highly proficient in Python, used for automation, web development, and data analysis. Experienced with libraries such as pyttsx3, Streamlit, and Django.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <!-- Skill 4: Java -->
+            <div class="skill">
+                <h3>JAVA</h3>
+                <p>Experienced in developing scalable applications,Strong understanding of object-oriented principles and architecture.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <!-- Skill 5: HTML -->
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Expert in HTML for creating well-structured and accessible web pages. Skilled in utilizing semantic HTML5 for clean code and web standards.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <!-- Skill 6: CSS -->
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Proficient in designing and styling responsive websites using CSS. Experienced in using CSS frameworks like Bootstrap and CSS animations for dynamic UIs.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects" id ="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="project-item">
+                <h3>Instructa - Voice Assistant on Raspberry Pi</h3>
+                <p> Instructa is a custom-built voice assistant developed using a Raspberry Pi, designed to streamline user interactions with various IoT devices and automate tasks. The project integrates speech recognition, natural language processing, and voice command execution to provide a seamless, hands-free experience.</p>
+            </div>
+            <div class="project-item">
+                <h3>Face Detection Bot</h3>
+                <p>This project is a web-based face detection application developed using Streamlit, enabling real-time facial recognition through a browser interface. The bot is hosted on a local server, making it accessible within the same IP network, and leverages computer vision to detect and identify faces from a live video feed.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="resume" id="resume">
+        <h2>Resume</h2>
+        <a href="my_resume.pdf" download>Download Resume</a>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="21b955b1-9454-4e31-96c6-6fd2cfbbb368">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <!-- Input for Mobile -->
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+    
+            <!-- Input for Email Address -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Textarea for Message -->
+            <label for="message">Enter Your Message Here</label>
+            <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+    
+    
+</body>
+</html>
